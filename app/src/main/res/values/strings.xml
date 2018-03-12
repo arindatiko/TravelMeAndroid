@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Travel Me</string>
+    <string name="register">Tidak punya akun? Registrasi <u>disini</u></string>
+    <string name="loginword">Sudah punya akun? Masuk <u>disini</u></string>
+</resources>
