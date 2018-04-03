@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v7.widget.CardView android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="5dp"
+        android:id="@+id/list_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/foto_profil"
+            android:src="@drawable/valerie"
+            android:layout_gravity="center_vertical|left"
+            android:layout_margin="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama"
+                android:text="Arinda Restu Nandatiko"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical|left"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_pesanan"
+                android:textSize="15sp"
+                android:text="Pesanan Selesai"/>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title1"
+                    android:text="Tanggal Pesan: "
+                    android:textSize="15dp"
+                    android:nextFocusRight="@id/foto_profil" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_pesan"
+                    android:text="20 Feb 2018, 12.02 WIB"
+                    android:textSize="15dp"
+                    android:nextFocusRight="@id/title1" />
+            </LinearLayout>
+            -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_selesai"
+                    android:text="20 Feb 2018, 12.02 WIB"
+                    android:textSize="12sp"
+                    android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout><!--
+</android.support.v7.widget.CardView>-->

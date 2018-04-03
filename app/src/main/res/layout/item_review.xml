@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:id="@+id/list_makanan"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img_cust"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valerie Agatha"
+            android:textSize="16sp"
+            android:layout_gravity=""
+            android:id="@+id/nama_cust"
+            android:layout_marginBottom="3dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keren!"
+            android:textSize="13sp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:id="@+id/txtReview"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23 April 2017"
+            android:id="@+id/tgl_review"
+            android:textSize="10sp"/>
+    </LinearLayout>
+</LinearLayout>

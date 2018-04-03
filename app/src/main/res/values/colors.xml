@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--<color name="colorPrimary">#0277bd</color>
+    <color name="colorPrimaryDark">#004c8c</color>
+    <color name="colorAccent">#58a5f0</color>-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#cccccc</color>
+    <color name="colorAccent">#F8F8F8</color>
+    <color name="colorBackground">#F8F8F8</color>
+    <color name="colorNavAccentSelected">#0288d1</color>
+    <color name="colorNavAccentUnselected">#727272</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="darker_gray">#aaaaaa</color>
+    <color name="button">#FFB300</color>
+    <color name="light_grey">#fbfbfb</color>
+    <color name="navbottom">#FF9800</color>
     <!--<color name="titleLogin">#607D8B</color>-->
 </resources>

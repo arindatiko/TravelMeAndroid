@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Travel Me</string>
-    <string name="register">Tidak punya akun? Registrasi <u>disini</u></string>
-    <string name="loginword">Sudah punya akun? Masuk <u>disini</u></string>
+    <string name="register">Tidak punya akun? Registrasi<u>disini</u></string>
+    <string name="loginword">Sudah punya akun? Masuk<u>disini</u></string>
+
+    <string name="home">Home</string>
+    <string name="history">History Pesanan</string>
+    <string name="review">Review Pengunjung</string>
+    <string name="profil">Profil Saya</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_map_driver">Map</string>
 </resources>
