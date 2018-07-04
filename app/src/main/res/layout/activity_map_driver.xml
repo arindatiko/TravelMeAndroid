@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="arindatiko.example.com.travelme.FasilitasActivity">
+    android:layout_width="match_parent">
 
-    <android.support.v7.widget.CardView
+    <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        app:cardCornerRadius="5dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="13dp"
-            android:textColor="@color/darker_gray"
-            android:text="Pesanan Tersedia"
-            android:layout_gravity="center"
-            android:textSize="20sp"/>
-    </android.support.v7.widget.CardView>
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="TravelMe"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlackLa"
+                android:fontFamily="@font/lobster"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -31,28 +36,20 @@
         android:layout_height="match_parent"
         tools:context="arindatiko.example.com.travelme.MapDriverActivity" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:id="@+id/linear_button"
         android:visibility="gone"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="vertical">
+        android:layout_margin="10dp"
+        android:layout_gravity="bottom">
 
-        <android.support.v7.widget.RecyclerView
+        <include layout="@layout/item_pesanan_driver"/>
+
+        <!--<android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_order_driver"/>
+            android:id="@+id/rv_order_driver"/>-->
 
-       <!-- <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rv_detail_order_driver"/>-->
-
-
-    </LinearLayout>
-
-</RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

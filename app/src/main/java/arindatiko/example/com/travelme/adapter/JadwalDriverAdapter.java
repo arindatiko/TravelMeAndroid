@@ -77,7 +77,7 @@ public class JadwalDriverAdapter extends RecyclerView.Adapter<JadwalDriverAdapte
         holder.down.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                linear_child.setVisibility(View.VISIBLE);
+             //   linear_child.setVisibility(View.VISIBLE);
             }
         });
 

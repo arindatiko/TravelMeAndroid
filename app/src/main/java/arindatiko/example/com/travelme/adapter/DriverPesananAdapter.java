@@ -43,13 +43,13 @@ public class DriverPesananAdapter extends RecyclerView.Adapter<DriverPesananAdap
         ImageButton next;
         public MyView (View view){
             super(view);
-            gambar = (ImageView) view.findViewById(R.id.profil_customer);
+            /*gambar = (ImageView) view.findViewById(R.id.profil_customer);
             nama = (TextView) view.findViewById(R.id.nama_customer);
             paket = (TextView) view.findViewById(R.id.txtPaket);
             bayar = (TextView) view.findViewById(R.id.txtBayar);
             tgl = (TextView) view.findViewById(R.id.txtTanggal);
             jam = (TextView) view.findViewById(R.id.txtWaktu);
-            next = (ImageButton) view.findViewById(R.id.btnNext);
+            next = (ImageButton) view.findViewById(R.id.btnNext);*/
         }
     }
 

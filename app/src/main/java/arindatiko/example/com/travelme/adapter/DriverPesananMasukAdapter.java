@@ -19,8 +19,9 @@ import arindatiko.example.com.travelme.model.PesananDriver;
  * Created by arindatiko on 01/04/2018.
  */
 
-public class DriverPesananMasukAdapter extends RecyclerView.Adapter<DriverPesananMasukAdapter.Holder> {
-    Context context;
+public class DriverPesananMasukAdapter {
+//public class DriverPesananMasukAdapter extends RecyclerView.Adapter<DriverPesananMasukAdapter.Holder> {
+    /*Context context;
     List<PesananDriver> orderList;
 
     public DriverPesananMasukAdapter(Context context, List<PesananDriver> orderList) {
@@ -78,5 +79,5 @@ public class DriverPesananMasukAdapter extends RecyclerView.Adapter<DriverPesana
                 Toast.makeText(context, "Pesanan Ditolak", Toast.LENGTH_SHORT).show();
             }
         });
-    }
+    }*/
 }

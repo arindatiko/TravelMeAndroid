@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"/>
+    <RelativeLayout
+        android:layout_below="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+        <ImageView
+                android:layout_width="343dp"
+                android:layout_height="343dp"
+                android:src="@drawable/ic_circle_gradient"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-182dp"
+                android:layout_marginTop="-36dp"/>
+
+        <ImageView
+            android:id="@+id/img_lets"
+            android:layout_width="225.29dp"
+            android:layout_height="180.98dp"
+            android:src="@drawable/ai_lets_travel"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="-30dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang,"
+            android:textColor="@color/colorBlackLa"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="6dp"
+            android:fontFamily="@font/lobster"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arinda Restu Nandatiko"
+            android:textColor="@color/colorBlackLa"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtNama"
+            android:fontFamily="@font/comfortaa"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin ABCDEF"
+            android:textColor="@color/colorBlackLa"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="6dp"
+            android:id="@+id/txtJabatan"
+            android:fontFamily="@font/comfortaa"/>
+    </LinearLayout>
+</RelativeLayout>

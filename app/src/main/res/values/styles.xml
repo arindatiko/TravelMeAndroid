@@ -1,19 +1,5 @@
 <resources>
 
-    <!-- Base application theme. -->
-   <!-- <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        &lt;!&ndash;<item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowActionBarOverlay">true</item>&ndash;&gt;
-    </style>
-
-    <style name="myDialog" parent="Theme.AppCompat.Dialog">
-        <item name="android:windowNoTitle">true</item>
-        ...
-    </style>-->
-
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -22,10 +8,19 @@
         <!--<item name="titleLogin">@color/titleLogin</item>&ndash;&gt;-->
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
-
+-->
     <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
 
     </style>
@@ -36,7 +31,9 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>-->
+    </style>
+
+    <style name="Theme"></style>-->
 
 
 </resources>

@@ -22,12 +22,12 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class KamarActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+public class KamarActivity extends AppCompatActivity {
 
-    @BindView(R.id.btnSimpanKamar)
+    /*@BindView(R.id.btnSimpanKamar)
     Button btnSimpan;
-    /*@BindView(R.id.btnTambahKamar)
-    Button btnTambah;*/
+    *//*@BindView(R.id.btnTambahKamar)
+    Button btnTambah;*//*
     @BindView(R.id.harga_kamar)
     EditText harga_kamar;
     @BindView(R.id.spinner_kamar)
@@ -79,10 +79,10 @@ public class KamarActivity extends AppCompatActivity implements AdapterView.OnIt
         setImage(R.drawable.icon3);
         //setTitle("Update Harga");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        /*setHasOptionsMenu(true);*/
+        *//*setHasOptionsMenu(true);*//*
     }
 
-    /*public void setTitle(String title) {
+    *//*public void setTitle(String title) {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         TextView textView = new TextView(this);
@@ -101,7 +101,7 @@ public class KamarActivity extends AppCompatActivity implements AdapterView.OnIt
         super.onResume();
         setTitle("Update Harga Kamar");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-    }*/
+    }*//*
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -119,5 +119,5 @@ public class KamarActivity extends AppCompatActivity implements AdapterView.OnIt
         Intent intent = new Intent(KamarActivity.this, UpdateHargaActivity.class);
         startActivity(intent);
         finish();
-    }
+    }*/
 }

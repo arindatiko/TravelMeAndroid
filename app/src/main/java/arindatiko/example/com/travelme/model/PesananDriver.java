@@ -1,76 +1,105 @@
 package arindatiko.example.com.travelme.model;
 
+import java.util.List;
+
 /**
  * Created by arindatiko on 02/04/2018.
  */
 
 public class PesananDriver {
-    private String nama, id, nomor, tempat, harga, via;
-    private int foto;
+    private int id_customer;
+    private int id_driver;
+    private int id_pesanan;
+    private Double posisi_lat;
+    private Double posisi_lng;
+    private int status;
+    private Double total_budget;
+    private String waktu_pesan;
+    //private String waktu_acc;
 
-    public PesananDriver(String nama, String id, String nomor, String tempat, String harga, String via, int foto) {
-        this.nama = nama;
-        this.id = id;
-        this.nomor = nomor;
-        this.tempat = tempat;
-        this.harga = harga;
-        this.via = via;
-        this.foto = foto;
+    private Customer user;
+    private List<String> tujuan;
+
+    public PesananDriver() {
     }
 
-    public String getNama() {
-        return nama;
+    public int getId_customer() {
+        return id_customer;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setId_customer(int id_customer) {
+        this.id_customer = id_customer;
     }
 
-    public String getId() {
-        return id;
+    public int getId_driver() {
+        return id_driver;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId_driver(int id_driver) {
+        this.id_driver = id_driver;
     }
 
-    public String getNomor() {
-        return nomor;
+    public int getId_pesanan() {
+        return id_pesanan;
     }
 
-    public void setNomor(String nomor) {
-        this.nomor = nomor;
+    public void setId_pesanan(int id_pesanan) {
+        this.id_pesanan = id_pesanan;
     }
 
-    public String getTempat() {
-        return tempat;
+    public Double getPosisi_lat() {
+        return posisi_lat;
     }
 
-    public void setTempat(String tempat) {
-        this.tempat = tempat;
+    public void setPosisi_lat(Double posisi_lat) {
+        this.posisi_lat = posisi_lat;
     }
 
-    public String getHarga() {
-        return harga;
+    public Double getPosisi_lng() {
+        return posisi_lng;
     }
 
-    public void setHarga(String harga) {
-        this.harga = harga;
+    public void setPosisi_lng(Double posisi_lng) {
+        this.posisi_lng = posisi_lng;
     }
 
-    public String getVia() {
-        return via;
+    public int getStatus() {
+        return status;
     }
 
-    public void setVia(String via) {
-        this.via = via;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public int getFoto() {
-        return foto;
+    public Double getTotal_budget() {
+        return total_budget;
     }
 
-    public void setFoto(int foto) {
-        this.foto = foto;
+    public void setTotal_budget(Double total_budget) {
+        this.total_budget = total_budget;
+    }
+
+    public String getWaktu_pesan() {
+        return waktu_pesan;
+    }
+
+    public void setWaktu_pesan(String waktu_pesan) {
+        this.waktu_pesan = waktu_pesan;
+    }
+
+    public void setTujuan(List<String> tujuan) {
+        this.tujuan = tujuan;
+    }
+
+    public List<String> getTujuan() {
+        return tujuan;
+    }
+
+    public Customer getUser() {
+        return user;
+    }
+
+    public void setUser(Customer user) {
+        this.user = user;
     }
 }

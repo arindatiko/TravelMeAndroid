@@ -35,28 +35,28 @@ public class DriverJadwalFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_jadwal_driver, container, false);
-        DriverJadwalAdapter adapter = new DriverJadwalAdapter(getContext(), getDummyDataToPass());
+       // DriverJadwalAdapter adapter = new DriverJadwalAdapter(getContext(), getDummyDataToPass());
 
         rv_jadwal.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rv_jadwal.setAdapter(adapter);
+      //  rv_jadwal.setAdapter(adapter);
         return v;
     }
     
-    public void setImage(int image){
-        /*((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
+    /*public void setImage(int image){
+        *//*((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);*//*
         ImageView imag = new ImageView(getActivity());
         imag.setImageResource(image);
         imag.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,95));
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         ((MainActivity) getActivity()).getSupportActionBar().setCustomView(imag);
-    }
+    }*/
 
     public void onResume(){
         super.onResume();
         //setTitle("Home");
-        setImage(R.drawable.icon3);
+        /*setImage(R.drawable.icon3);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(true);*/
     }
 }

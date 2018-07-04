@@ -22,28 +22,59 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+
+        <!--<service
+            android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>-->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ProfilActivity" />
         <activity android:name=".UpdateHargaActivity" />
         <activity android:name=".ParkirActivity" />
         <activity android:name=".MasukActivity" />
         <activity android:name=".KamarActivity" />
-        <activity android:name=".MenuActivity"/>
+        <activity android:name=".MenuActivity" />
         <activity android:name=".FasilitasActivity" />
         <activity android:name=".AdminOrderActivity" />
         <activity android:name=".OrderHotelActivity" />
         <activity android:name=".OrderRestoActivity" />
-        <activity android:name=".UpdateInfoWisataActivity" />
+        <activity
+            android:name=".UpdateInfoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".EditProfilActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -57,14 +88,22 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".MapDriverActivity" />
+        <!--<activity android:name=".MapDriverActivity" />-->
 
-        <!--
-            <activity
+        <activity
             android:name=".MapDriverActivity"
-            android:label="@string/title_activity_map_driver"></activity>
-        -->
-        <activity android:name=".DetailJadwalActivity"></activity>
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transparent"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name=".DetailJadwalActivity" />
+        <activity android:name=".DetailTempatActivity" />
+        <activity android:name=".InputBudgetActivity" />
+        <activity
+            android:name=".DriverMapActivity"
+            android:label="@string/title_activity_driver_map" />
+        <activity android:name=".LoginActivity2"></activity>
     </application>
 
 </manifest>

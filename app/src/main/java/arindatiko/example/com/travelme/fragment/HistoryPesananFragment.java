@@ -62,22 +62,22 @@ public class HistoryPesananFragment extends Fragment {
         return v;
     }
 
-    public void setImage(int image){
-        /*((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
-        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
+    /*public void setImage(int image){
+        *//*((MainActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
+        ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);*//*
         ImageView imag = new ImageView(getActivity());
         imag.setImageResource(image);
         imag.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,95));
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         ((MainActivity) getActivity()).getSupportActionBar().setCustomView(imag);
-    }
+    }*/
 
     public void onResume(){
         super.onResume();
         //setTitle("Home");
-        setImage(R.drawable.icon3);
+        /*setImage(R.drawable.icon3);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-        setHasOptionsMenu(true);
+        setHasOptionsMenu(true);*/
     }
 
    /* public void setTitle(String title) {

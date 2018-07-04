@@ -5,7 +5,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="arindatiko.example.com.travelme.fragment.AdminDriverProfilFragment">
 
-    <android.support.v7.widget.CardView
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="TravelMe"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlackLa"
+                android:fontFamily="@font/lobster"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--<android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
@@ -19,7 +41,7 @@
             android:text="Profil Saya"
             android:layout_gravity="center"
             android:textSize="20sp"/>
-    </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>-->
 
     <include layout="@layout/item_profil"/>
 
