@@ -141,47 +141,16 @@ public class MapDriverActivity extends AppCompatActivity implements OnMapReadyCa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
-        //getDataPesanan();
-        //getPesanan();
     }
 
-    private void getPesanan() {
-        pesanan_db = FirebaseDatabase.getInstance().getReference("pesanan");
-        pesanan_db.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-                pesananDriver = dataSnapshot.getValue(PesananDriver.class);
-                Log.d("pesanna", String.valueOf(dataSnapshot.getValue()));
-                /*ListPesanan.add(pesananDriver);
 
-                for (int i = 0; i < ListPesanan.size() ; i++) {
-                    Toast.makeText(MapDriverActivity.this, ""+String.valueOf(ListPesanan.get(i).getId_pesanan()), Toast.LENGTH_SHORT).show();
-                }*/
-            }
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
 
-            @Override
-            public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+        getDataPesanan();
     }
-
+    
     private void getDataPesanan() {
         pesanan_db = FirebaseDatabase.getInstance().getReference();
 
@@ -296,19 +265,6 @@ public class MapDriverActivity extends AppCompatActivity implements OnMapReadyCa
         pesanan_db.addValueEventListener(dataListener);
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
-
-        getDataPesanan();
-
-        /*for (int i = 0; i < ListPesanan.size(); i++) {
-            createMarker(ListPesanan.get(i).getPosisi_lat(), ListPesanan.get(i).getPosisi_lng());
-        }*/
-
-        //getDriverLocation();
-
-    }
 
     private void getDriverLocation() {
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
