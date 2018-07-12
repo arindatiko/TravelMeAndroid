@@ -18,7 +18,7 @@ public class PesananDriver {
     //private String waktu_acc;
 
     private Customer user;
-    private List<String> tujuan;
+    private List<Tujuan> tujuan;
 
     public PesananDriver() {
     }
@@ -87,11 +87,11 @@ public class PesananDriver {
         this.waktu_pesan = waktu_pesan;
     }
 
-    public void setTujuan(List<String> tujuan) {
+    public void setTujuan(List<Tujuan> tujuan) {
         this.tujuan = tujuan;
     }
 
-    public List<String> getTujuan() {
+    public List<Tujuan> getTujuan() {
         return tujuan;
     }
 

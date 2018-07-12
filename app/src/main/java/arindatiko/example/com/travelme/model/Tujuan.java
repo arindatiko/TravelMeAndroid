@@ -4,25 +4,24 @@ import java.util.ArrayList;
 
 public class Tujuan {
 
-    //private String id_user;
+    private String id_user;
     private String id_tujuan;
-    /*private String jenis_layanan;
-    private int flag;*/
-
-    /*private ArrayList<Wisata> wisata;
+    private String jenis_layanan;
+    private int flag;
+/*
+    private ArrayList<Wisata> wisata;
     private ArrayList<Kuliner> kuliner;
     private ArrayList<Penginapan> penginapan;
     private ArrayList<Kamar> kamar;
     private ArrayList<Menu> menu;*/
 
-   /* public String getId_user() {
+    public String getId_user() {
         return id_user;
     }
 
     public void setId_user(String id_user) {
         this.id_user = id_user;
     }
-*/
     public String getId_tujuan() {
         return id_tujuan;
     }
@@ -31,7 +30,7 @@ public class Tujuan {
         this.id_tujuan = id_tujuan;
     }
 
-   /* public String getJenis_layanan() {
+    public String getJenis_layanan() {
         return jenis_layanan;
     }
 
@@ -45,7 +44,7 @@ public class Tujuan {
 
     public void setFlag(int flag) {
         this.flag = flag;
-    }*/
+    }
 
     /*public ArrayList<Wisata> getWisata() {
         return wisata;

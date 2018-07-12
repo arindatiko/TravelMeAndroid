@@ -3,6 +3,7 @@ package arindatiko.example.com.travelme;
 import arindatiko.example.com.travelme.model.Drivers;
 import arindatiko.example.com.travelme.model.Kuliner;
 import arindatiko.example.com.travelme.model.Penginapan;
+import arindatiko.example.com.travelme.model.PesananDriver;
 import arindatiko.example.com.travelme.model.User;
 import arindatiko.example.com.travelme.model.Wisata;
 import retrofit2.Call;
@@ -99,6 +100,12 @@ public class API {
         @FormUrlEncoded
         @POST("user")
         Call<Drivers> get_user(@Field("id_user") int id_user);
+
+        @FormUrlEncoded
+        @POST("terima")
+        Call<PesananDriver> update_driver(
+                @Field("id_pesanan") String id_pesanan,
+                @Field("id_driver") int id_driver);
     }
 
     public interface GetService{

@@ -3,8 +3,25 @@ package arindatiko.example.com.travelme.model;
 public class Drivers {
     private String nama_lengkap, alamat, username, password, user_type, token, no_telp;
     private int id_user;
+    Double posisi_lat, posisi_lng;
 
     public Drivers() {
+    }
+
+    public Double getPosisi_lat() {
+        return posisi_lat;
+    }
+
+    public void setPosisi_lat(Double posisi_lat) {
+        this.posisi_lat = posisi_lat;
+    }
+
+    public Double getPosisi_lng() {
+        return posisi_lng;
+    }
+
+    public void setPosisi_lng(Double posisi_lng) {
+        this.posisi_lng = posisi_lng;
     }
 
     public void setNama_lengkap(String nama_lengkap) {
